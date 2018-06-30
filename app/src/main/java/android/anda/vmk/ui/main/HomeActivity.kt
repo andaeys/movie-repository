@@ -104,7 +104,9 @@ class HomeActivity : LifecycleActivity(), SearchView.OnQueryTextListener {
             holder.year.text = movie.year
             Picasso.with(holder.img.context)
                     .load(movie.posterUrl).fit()
+                    .placeholder(R.mipmap.ic_movie)
                     .into(holder.img)
+            
         }
 
         override fun getItemCount(): Int {
