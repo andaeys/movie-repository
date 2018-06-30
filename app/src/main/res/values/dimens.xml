@@ -12,4 +12,5 @@
     <dimen name="cards_button_height">48dp</dimen>
     <dimen name="article_subheading">18sp</dimen>
     <dimen name="card_image_height">170dp</dimen>
+    <dimen name="detail_card_margin">10dp</dimen>
 </resources>

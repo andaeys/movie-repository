@@ -15,7 +15,7 @@
             <LinearLayout
                 android:orientation="vertical"
                 android:background="@android:color/white"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="@dimen/detail_card_margin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageView
@@ -28,8 +28,8 @@
                     android:layout_marginBottom="10dp"
                     android:id="@+id/title_movie"
                     android:textSize="20sp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="@dimen/detail_card_margin"
+                    android:layout_marginRight="@dimen/detail_card_margin"
                     android:textColor="@color/colorAccent"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -41,16 +41,16 @@
                     android:text="@string/detail_genre"
                     android:layout_gravity="end"
                     android:layout_width="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="@dimen/detail_card_margin"
+                    android:layout_marginRight="@dimen/detail_card_margin"
                     android:layout_marginBottom="15dp"
                     android:layout_height="wrap_content" />
             </LinearLayout>
 
             <android.support.v7.widget.CardView
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/detail_card_margin"
+                android:layout_marginRight="@dimen/detail_card_margin"
+                android:layout_marginBottom="@dimen/detail_card_margin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -84,9 +84,9 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/detail_card_margin"
+                android:layout_marginRight="@dimen/detail_card_margin"
+                android:layout_marginBottom="@dimen/detail_card_margin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -125,8 +125,8 @@
 
 
             <android.support.v7.widget.CardView
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
+                android:layout_marginLeft="@dimen/detail_card_margin"
+                android:layout_marginRight="@dimen/detail_card_margin"
                 android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
