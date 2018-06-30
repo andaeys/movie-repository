@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="home_padding">5dp</dimen>
+
+    <!--ui layout drawer and view pager-->
+    <dimen name="card_height">290dp</dimen>
+    <dimen name="md_keylines">5dp</dimen>
+    <dimen name="tile_padding">8dp</dimen>
+    <dimen name="tile_height">160dp</dimen>
+
+    <dimen name="cards_button_width">48dp</dimen>
+    <dimen name="cards_button_height">48dp</dimen>
+    <dimen name="article_subheading">18sp</dimen>
+    <dimen name="card_image_height">170dp</dimen>
+</resources>
