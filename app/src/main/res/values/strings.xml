@@ -1,4 +1,9 @@
 <resources>
-    <string name="app_name">View-Model-Kotlin</string>
+    <string name="app_name">Movie Repository</string>
     <string name="search_hint">Search Movie</string>
+    <string name="detail_genre">Genre</string>
+    <string name="title_actors">Starring</string>
+    <string name="title_imdb">IMDB</string>
+    <string name="title_metasocre">Metascore</string>
+    <string name="title_plot">Plot</string>
 </resources>

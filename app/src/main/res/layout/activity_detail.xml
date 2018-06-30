@@ -38,7 +38,7 @@
                     android:id="@+id/genre_movie"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="16sp"
-                    android:text="Genre"
+                    android:text="@string/detail_genre"
                     android:layout_gravity="end"
                     android:layout_width="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -63,7 +63,7 @@
 
                     <TextView
                         android:textSize="18sp"
-                        android:text="Starring"
+                        android:text="@string/title_actors"
                         android:textStyle="bold"
                         android:textColor="@android:color/black"
                         android:layout_marginBottom="10dp"
@@ -74,7 +74,6 @@
                         android:id="@+id/actors_movie"
                         android:textSize="18sp"
                         android:textColor="@android:color/darker_gray"
-                        android:maxLines="3"
                         android:layout_marginBottom="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
@@ -102,7 +101,7 @@
                         android:id="@+id/imdb_ratting"
                         android:layout_gravity="center_horizontal"
                         android:textSize="18sp"
-                        android:text="IMDB"
+                        android:text="@string/title_imdb"
                         android:textColor="@color/colorAccent"
                         android:layout_marginBottom="10dp"
                         android:layout_width="wrap_content"
@@ -112,7 +111,7 @@
                         android:id="@+id/metascore"
                         android:layout_gravity="center_horizontal"
                         android:textSize="18sp"
-                        android:text="Metascore"
+                        android:text="@string/title_metasocre"
                         android:textColor="@color/colorAccent"
                         android:layout_marginBottom="10dp"
                         android:layout_width="wrap_content"
@@ -141,7 +140,7 @@
 
                     <TextView
                         android:textSize="18sp"
-                        android:text="Plot"
+                        android:text="@string/title_plot"
                         android:textStyle="bold"
                         android:textColor="@android:color/black"
                         android:layout_marginBottom="10dp"
