@@ -106,7 +106,7 @@ class HomeActivity : LifecycleActivity(), SearchView.OnQueryTextListener {
                     .load(movie.posterUrl).fit()
                     .placeholder(R.mipmap.ic_movie)
                     .into(holder.img)
-            
+
         }
 
         override fun getItemCount(): Int {
