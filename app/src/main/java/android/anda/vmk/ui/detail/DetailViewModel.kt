@@ -2,7 +2,6 @@ package android.anda.vmk.ui.detail
 
 import android.anda.vmk.data.AppRepository
 import android.anda.vmk.data.model.MovieDetail
-import android.anda.vmk.data.model.MovieItem
 import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.ViewModel
 import rx.Observable
@@ -12,7 +11,7 @@ import rx.schedulers.Schedulers
 class DetailViewModel(private val appRepository: AppRepository) : ViewModel() {
 
     val movieDetailLiveData: MutableLiveData<MovieDetail> = MutableLiveData()
-    val messageLiveData: MutableLiveData<String> = MutableLiveData()
+    val errorLiveData: MutableLiveData<String> = MutableLiveData()
 
     fun loadData(id:String) {
         appRepository.getDetailMovie(id)
@@ -28,15 +27,10 @@ class DetailViewModel(private val appRepository: AppRepository) : ViewModel() {
                             Observable.just(response.body())
                         }
                     }
-                }
-                .toSingle()
+                }.toSingle()
                 .subscribe(
-                        { info ->
-                            movieDetailLiveData.postValue(info as MovieDetail)
-                        },
-                        { error ->
-                            messageLiveData.postValue("Failed open movie ${error!!.message}")
-                        }
+                    { info -> movieDetailLiveData.postValue(info as MovieDetail) },
+                    { error -> errorLiveData.postValue("Failed to open the movie ${error!!.message}")}
                 )
     }
 

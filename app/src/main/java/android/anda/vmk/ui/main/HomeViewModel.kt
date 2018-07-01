@@ -11,7 +11,7 @@ import rx.schedulers.Schedulers
 class HomeViewModel(private val appRepository: AppRepository) : ViewModel() {
 
     val listItemLiveData: MutableLiveData<List<MovieItem>> = MutableLiveData()
-    val messageLiveData: MutableLiveData<String> = MutableLiveData()
+    val errorLiveData: MutableLiveData<String> = MutableLiveData()
 
     fun loadData(title: String, page: Int) {
         appRepository.searchItems(title, page)
@@ -27,15 +27,10 @@ class HomeViewModel(private val appRepository: AppRepository) : ViewModel() {
                             Observable.just(response.body().movieList)
                         }
                     }
-                }
-                .toSingle()
+                }.toSingle()
                 .subscribe(
-                        { list ->
-                            listItemLiveData.postValue(list as List<MovieItem>)
-                        },
-                        { error ->
-                            messageLiveData.postValue("Failed search movies ${error!!.message}")
-                        }
+                    { list -> listItemLiveData.postValue(list as List<MovieItem>) },
+                    { error -> errorLiveData.postValue("Failed search movies ${error!!.message}")}
                 )
     }
 

@@ -63,7 +63,7 @@ class HomeActivity : LifecycleActivity(), SearchView.OnQueryTextListener {
             progress_bar.visibility = View.GONE
         })
 
-        viewModel.messageLiveData.observe(this, Observer { message ->
+        viewModel.errorLiveData.observe(this, Observer { message ->
             if(adapter.movieList!!.isEmpty()){
                 tv_data.visibility = View.VISIBLE
                 tv_data.text = "Not Found"

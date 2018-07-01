@@ -35,7 +35,7 @@ class DetailActivity : LifecycleActivity() {
 
         viewModel.loadData(id)
 
-        viewModel.messageLiveData.observe(this, Observer { message ->
+        viewModel.errorLiveData.observe(this, Observer { message ->
             Toast.makeText(applicationContext, "failed load movie info", Toast.LENGTH_SHORT).show()
             Log.d(TAG, message)
             progress_bar.visibility= View.GONE
